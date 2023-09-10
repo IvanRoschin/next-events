@@ -1,12 +1,12 @@
 // import Link from "next/link";
 import Image from "next/image";
-import Button from "../ui/button";
-import classes from "./EventItem.module.css";
-import DateIcon from "../icons/date-icon";
 import AddressIcon from "../icons/address-icon";
 import ArrowRightIcon from "../icons/arrow-right-icon";
+import DateIcon from "../icons/date-icon";
+import Button from "../ui/button";
+import classes from "./event-item.module.css";
 
-function EventItem(props) {
+export default function EventItem(props) {
   const { title, image, date, location, id } = props;
 
   const humanReadableDate = new Date(date).toLocaleString("en-UA", {
@@ -46,5 +46,3 @@ function EventItem(props) {
     </li>
   );
 }
-
-export default EventItem;

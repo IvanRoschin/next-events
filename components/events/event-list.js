@@ -1,6 +1,7 @@
-import EventItem from "./EventItem";
-import classes from "./EventList";
-function EventList(props) {
+import EventItem from "./event-item";
+import classes from "./event-list.module.css";
+
+export default function EventList(props) {
   const { items } = props;
   return (
     <ul className={classes.list}>
@@ -17,5 +18,3 @@ function EventList(props) {
     </ul>
   );
 }
-
-export default EventList;
