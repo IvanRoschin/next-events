@@ -2,6 +2,7 @@
   "name": "next-events",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/IvanRoschin/next-events",
   "scripts": {
     "dev": "nodemon",
     "build": "next build",
