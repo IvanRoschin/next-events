@@ -22,6 +22,3 @@ jobs:
         with:
           branch: gh-pages
           folder: .next
-
-      - name: Clean up
-        run: rm -r .next
