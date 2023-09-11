@@ -17,11 +17,17 @@ export default function EventItem(props) {
 
   const formatedAddress = location.replace(", ", "\n");
 
-  const exploreLink = `public/events/${id}`;
+  const exploreLink = `/events/${id}`;
 
   return (
     <li className={classes.item}>
-      <Image src={"/" + image} alt={title} width={800} height={500} />
+      <Image
+        src={"public/images" + image}
+        alt={title}
+        width={800}
+        height={500}
+        loading="laizy"
+      />
       <div className={classes.content}>
         <div className={classes.summary}>
           <h2>{title}</h2>
