@@ -17,7 +17,7 @@ export default function EventItem(props) {
 
   const formatedAddress = location.replace(", ", "\n");
 
-  const exploreLink = `/events/${id}`;
+  const exploreLink = `public/events/${id}`;
 
   return (
     <li className={classes.item}>
