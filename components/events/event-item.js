@@ -22,7 +22,7 @@ export default function EventItem(props) {
   return (
     <li className={classes.item}>
       <Image
-        src={"public/images" + image}
+        src={"public/" + image}
         alt={title}
         width={800}
         height={500}
