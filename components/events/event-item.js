@@ -1,4 +1,3 @@
-// import Link from "next/link";
 import Image from "next/image";
 import AddressIcon from "../icons/address-icon";
 import ArrowRightIcon from "../icons/arrow-right-icon";
@@ -22,7 +21,7 @@ export default function EventItem(props) {
   return (
     <li className={classes.item}>
       <Image
-        src={"public/" + image}
+        src={`${process.env.PUBLIC_URL} + ${image}`}
         alt={title}
         width={800}
         height={500}
