@@ -18,10 +18,10 @@ function EventLogistics(props) {
     <section className={classes.logistics}>
       <div className={classes.image}>
         <Image
-          src={`public/images/${image}`}
+          src={`${process.env.PUBLIC_URL}${image}`}
           alt={imageAlt}
-          width={200}
-          height={100}
+          width={400}
+          height={400}
         />
       </div>
       <ul className={classes.list}>

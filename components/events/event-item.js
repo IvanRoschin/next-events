@@ -21,11 +21,10 @@ export default function EventItem(props) {
   return (
     <li className={classes.item}>
       <Image
-        src={`${process.env.PUBLIC_URL} + ${image}`}
+        src={`${process.env.PUBLIC_URL}${image}`}
         alt={title}
-        width={800}
-        height={500}
-        loading="laizy"
+        width={250}
+        height={160}
       />
       <div className={classes.content}>
         <div className={classes.summary}>
