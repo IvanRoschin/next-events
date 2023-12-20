@@ -5,6 +5,8 @@ import DateIcon from "../icons/date-icon";
 import Button from "../ui/button";
 import classes from "./event-item.module.css";
 
+const prefix = "/next-events";
+
 export default function EventItem(props) {
   const { title, image, date, location, id } = props;
 
@@ -21,7 +23,7 @@ export default function EventItem(props) {
   return (
     <li className={classes.item}>
       <Image
-        src={`${process.env.PUBLIC_URL}${image}`}
+        src={`${prefix}+${process.env.PUBLIC_URL}${image}`}
         alt={title}
         width={250}
         height={160}
