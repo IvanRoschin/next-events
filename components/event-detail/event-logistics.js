@@ -3,6 +3,7 @@ import DateIcon from "../icons/date-icon";
 import LogisticsItem from "./logistics-item";
 import Image from "next/image";
 import classes from "./event-logistics.module.css";
+const prefix = "/next-events";
 
 function EventLogistics(props) {
   const { date, address, image, imageAlt } = props;
@@ -18,7 +19,7 @@ function EventLogistics(props) {
     <section className={classes.logistics}>
       <div className={classes.image}>
         <Image
-          src={`${process.env.PUBLIC_URL}${image}`}
+          src={`${prefix}${process.env.PUBLIC_URL}${image}`}
           alt={imageAlt}
           width={400}
           height={400}
